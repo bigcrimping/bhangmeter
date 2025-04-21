@@ -114,6 +114,23 @@ end
 <dd>Green</dd>
 </dl>
 
+### Nuke Status
+
+<div id="nuke-status">Loading...</div>
+
+<script>
+fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json')
+  .then(response => response.json())
+  .then(data => {
+    const statusElement = document.getElementById('nuke-status');
+    statusElement.textContent = data['nuke gone off?'] === 'no' ? 'No' : 'Yes';
+  })
+  .catch(error => {
+    console.error('Error fetching nuke status:', error);
+    document.getElementById('nuke-status').textContent = 'Error loading status';
+  });
+</script>
+
 ```
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 ```
