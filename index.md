@@ -1,3 +1,64 @@
+# Has a nuke gone off?
+
+**Good question!** 
+
+
+### Nuke Status
+
+<div id="nuke-status">Loading...</div>
+
+### Station Location
+
+<div id="map" style="height: 400px; width: 100%;"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<script>
+// Fetch the JSON data
+fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json')
+  .then(response => response.json())
+  .then(data => {
+    // Update nuke status
+    const statusElement = document.getElementById('nuke-status');
+    statusElement.textContent = data['nuke gone off?'] === 'no' ? 'No' : 'Yes';
+
+    // Initialize map
+    const map = L.map('map').setView([data.lat, data.long], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add marker
+    L.marker([data.lat, data.long])
+      .addTo(map)
+      .bindPopup(`Station: ${data.station}<br>Last update: ${data['last monitor upload date']}`)
+      .openPopup();
+  })
+  .catch(error => {
+    console.error('Error fetching data:', error);
+    document.getElementById('nuke-status').textContent = 'Error loading status';
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+```
+Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
+```
+
+```
+The final element.
+```
 ---
 layout: default
 ---
@@ -113,28 +174,3 @@ end
 <dt>Color</dt>
 <dd>Green</dd>
 </dl>
-
-### Nuke Status
-
-<div id="nuke-status">Loading...</div>
-
-<script>
-fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json')
-  .then(response => response.json())
-  .then(data => {
-    const statusElement = document.getElementById('nuke-status');
-    statusElement.textContent = data['nuke gone off?'] === 'no' ? 'No' : 'Yes';
-  })
-  .catch(error => {
-    console.error('Error fetching nuke status:', error);
-    document.getElementById('nuke-status').textContent = 'Error loading status';
-  });
-</script>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
