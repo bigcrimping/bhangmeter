@@ -2,14 +2,16 @@
 
 **Good question!** 
 
-### Nuke Status
-<div id="nuke-status" style="font-size: 24px; font-weight: bold;">Loading...</div>
+<div style="margin: 20px 0;">
+  <h3>Nuke Status</h3>
+  <div id="nuke-status" style="font-size: 24px; font-weight: bold; margin: 10px 0;">Loading...</div>
 
-### Last Updated
-<div id="last-updated" style="color: #666;">Loading...</div>
+  <h3>Last Updated</h3>
+  <div id="last-updated" style="color: #666; margin: 10px 0;">Loading...</div>
 
-### Station Location
-<div id="map" style="height: 400px; width: 100%; margin: 20px 0;"></div>
+  <h3>Station Location</h3>
+  <div id="map" style="height: 400px; width: 100%; margin: 10px 0;"></div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
