@@ -21,7 +21,7 @@
 <script>
   
 // Fetch the JSON data
-fetch('https://api.github.com/repos/bigcrimping/ned_json/contents/events.json', {
+fetch(`https://api.github.com/repos/bigcrimping/ned_json/contents/events.json?t=${Date.now()}`, {
   headers: {
     'Accept': 'application/vnd.github.v3.raw'
   }
