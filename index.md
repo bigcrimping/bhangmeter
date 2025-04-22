@@ -21,11 +21,9 @@
 <script>
   
 // Fetch the JSON data
-fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json?', {
+fetch('https://api.github.com/repos/bigcrimping/ned_json/contents/events.json', {
   headers: {
-    'Cache-Control': 'no-cache, no-store, must-revalidate',
-    'Pragma': 'no-cache',
-    'Expires': '0'
+    'Accept': 'application/vnd.github.v3.raw'
   }
 })
   .then(response => response.json())
