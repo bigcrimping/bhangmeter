@@ -21,7 +21,7 @@
 <script>
   
 // Fetch the JSON data
-fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json?nocache=${Date.now()}', {
+fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json?', {
   headers: {
     'Cache-Control': 'no-cache, no-store, must-revalidate',
     'Pragma': 'no-cache',
