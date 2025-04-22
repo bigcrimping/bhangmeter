@@ -6,11 +6,16 @@ on:
       - main
   pull_request:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
@@ -18,15 +23,41 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
       
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+      
       - name: Set script permissions
         run: |
+          git update-index --chmod=+x script/bootstrap
+          git update-index --chmod=+x script/cibuild
+          git update-index --chmod=+x script/validate-html
+          git update-index --chmod=+x script/release
           chmod +x script/bootstrap
           chmod +x script/cibuild
           chmod +x script/validate-html
           chmod +x script/release
       
       - name: Build site
-        run: script/cibuild
+        run: |
+          chmod +x script/bootstrap
+          ./script/bootstrap
+          chmod +x script/cibuild
+          ./script/cibuild
         
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2 
+        uses: actions/upload-pages-artifact@v1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2 
