@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+*.sh text eol=lf
+script/* text eol=lf
+script/bootstrap linguist-executable
+script/cibuild linguist-executable
+script/release linguist-executable
+script/validate-html linguist-executable
