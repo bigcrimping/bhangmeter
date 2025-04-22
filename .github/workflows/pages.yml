@@ -1,0 +1,32 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      
+      - name: Set script permissions
+        run: |
+          chmod +x script/bootstrap
+          chmod +x script/cibuild
+          chmod +x script/validate-html
+          chmod +x script/release
+      
+      - name: Build site
+        run: script/cibuild
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2 
