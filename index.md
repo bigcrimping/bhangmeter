@@ -11,6 +11,25 @@
 
   <h3>Station Location</h3>
   <div id="map" style="height: 400px; width: 100%; margin: 10px 0;"></div>
+
+  <!-- New Table Section -->
+  <h3>Details</h3>
+  <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+    <thead>
+      <tr>
+        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Nuke Status</th>
+        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Last Update</th>
+        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Total Minutes Monitored</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td id="table-nuke-status" style="border: 1px solid #ddd; padding: 8px;">Loading...</td>
+        <td id="table-last-updated" style="border: 1px solid #ddd; padding: 8px;">Loading...</td>
+        <td id="table-total-minutes" style="border: 1px solid #ddd; padding: 8px;">Loading...</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -52,6 +71,11 @@ fetch(`https://api.github.com/repos/bigcrimping/ned_json/contents/events.json?t=
       .addTo(map)
       .bindPopup(`Station: ${data.station}<br>Last update: ${data['last monitor upload date']}`)
       .openPopup();
+
+    // Update table values
+    document.getElementById('table-nuke-status').textContent = isNukeGoneOff;
+    document.getElementById('table-last-updated').textContent = lastUpdate.toLocaleString();
+    document.getElementById('table-total-minutes').textContent = `${data['total minutes monitored']} minutes`;
   })
   .catch(error => {
     console.error('Error fetching data:', error);
