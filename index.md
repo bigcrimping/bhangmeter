@@ -12,20 +12,20 @@
   <h3>Station Location</h3>
   <div id="map" style="height: 400px; width: 100%; margin: 10px 0;"></div>
 
-  <!-- New Table Section -->
+  <!-- Updated Table Section -->
   <h3>Details</h3>
   <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
-    <thead>
-      <tr>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Nuke Status</th>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Last Update</th>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Total Minutes Monitored</th>
-      </tr>
-    </thead>
     <tbody>
       <tr>
+        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Nuke Status</th>
         <td id="table-nuke-status" style="border: 1px solid #ddd; padding: 8px;">Loading...</td>
+      </tr>
+      <tr>
+        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Last Update</th>
         <td id="table-last-updated" style="border: 1px solid #ddd; padding: 8px;">Loading...</td>
+      </tr>
+      <tr>
+        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Total Minutes Monitored</th>
         <td id="table-total-minutes" style="border: 1px solid #ddd; padding: 8px;">Loading...</td>
       </tr>
     </tbody>
