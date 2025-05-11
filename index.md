@@ -94,6 +94,15 @@ fetch(`https://api.github.com/repos/bigcrimping/ned_json/contents/events.json?t=
 }
 </style>
 
-
+<style>
+.site-title,
+.site-description,
+header > p,
+header .header,
+header .description,
+header p {
+  display: none !important;
+}
+</style>
 
 
