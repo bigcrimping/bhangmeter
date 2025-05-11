@@ -2,6 +2,15 @@
 ![Current Status](./assets/img/current_status.png)
 
 <div style="margin: 20px 0;">
+  <h3>Nuke Status</h3>
+  <div id="nuke-status" style="font-size: 24px; font-weight: bold; margin: 10px 0;">Loading...</div>
+
+  <h3>Last Updated</h3>
+  <div id="last-updated" style="color: #666; margin: 10px 0;">Loading...</div>
+
+  <h3>Station Location</h3>
+  <div id="map" style="height: 400px; width: 100%; margin: 10px 0;"></div>
+
   <!-- Updated Table Section -->
   <h3>Details</h3>
   <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
@@ -20,9 +29,6 @@
       </tr>
     </tbody>
   </table>
-
-  <h3>Station Location</h3>
-  <div id="map" style="height: 400px; width: 100%; margin: 10px 0;"></div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
