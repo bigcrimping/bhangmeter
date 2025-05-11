@@ -1,36 +1,30 @@
-# Has a nuke gone off?
+![Current Status](./asset/img/current_status.png)
 
-**Good question!** 
 
-<div style="margin: 20px 0;">
-  <h3>Nuke Status</h3>
-  <div id="nuke-status" style="font-size: 24px; font-weight: bold; margin: 10px 0;">Loading...</div>
-
-  <h3>Last Updated</h3>
-  <div id="last-updated" style="color: #666; margin: 10px 0;">Loading...</div>
-
-  <h3>Station Location</h3>
-  <div id="map" style="height: 400px; width: 100%; margin: 10px 0;"></div>
 
   <!-- Updated Table Section -->
   <h3>Details</h3>
   <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
     <tbody>
       <tr>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Nuke Status</th>
+        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Has a nuke gone off?</th>
         <td id="table-nuke-status" style="border: 1px solid #ddd; padding: 8px;">Loading...</td>
       </tr>
       <tr>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Last Update</th>
+        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Last Update:</th>
         <td id="table-last-updated" style="border: 1px solid #ddd; padding: 8px;">Loading...</td>
       </tr>
       <tr>
-        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Total Minutes Monitored</th>
+        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Total Minutes Monitored:</th>
         <td id="table-total-minutes" style="border: 1px solid #ddd; padding: 8px;">Loading...</td>
       </tr>
     </tbody>
   </table>
 </div>
+
+
+  <h3>Station Location</h3>
+  <div id="map" style="height: 400px; width: 100%; margin: 10px 0;"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
