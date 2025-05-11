@@ -1,6 +1,22 @@
 ![Current Status](./assets/img/current_status.png)
 
+
+
+
+![Location](./assets/img/monitoring_location.png)
+
+
+
+
+![Location](./assets/img/how_works.png)
+
 <div style="margin: 20px 0;">
+  <h3>Nuke Status</h3>
+  <div id="nuke-status" style="font-size: 24px; font-weight: bold; margin: 10px 0;">Loading...</div>
+
+  <h3>Last Updated</h3>
+  <div id="last-updated" style="color: #666; margin: 10px 0;">Loading...</div>
+
   <h3>Station Location</h3>
   <div id="map" style="height: 400px; width: 100%; margin: 10px 0;"></div>
 
@@ -23,6 +39,11 @@
     </tbody>
   </table>
 </div>
+
+
+
+
+
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
