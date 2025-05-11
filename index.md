@@ -85,7 +85,14 @@ fetch(`https://api.github.com/repos/bigcrimping/ned_json/contents/events.json?t=
   });
 </script>
 
-
+<style>
+.site-title {
+  display: none !important;
+}
+.site-description {
+  display: none !important;
+}
+</style>
 
 
 
