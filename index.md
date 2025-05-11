@@ -2,6 +2,8 @@
 
 **Good question!** 
 
+![Current Status](./assets/img/current_status.png)
+
 <div style="margin: 20px 0;">
   <h3>Nuke Status</h3>
   <div id="nuke-status" style="font-size: 24px; font-weight: bold; margin: 10px 0;">Loading...</div>
