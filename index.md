@@ -105,4 +105,14 @@ header p {
 }
 </style>
 
+<style>
+.site-title,
+header h1,
+header .site-title,
+header > h1,
+header > .site-title {
+  display: none !important;
+}
+</style>
+
 
