@@ -1,4 +1,4 @@
-![Current Status](./asset/img/current_status.png)
+![Current Status](/asset/img/current_status.png)
 
 
 
