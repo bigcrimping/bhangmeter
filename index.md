@@ -1,4 +1,3 @@
-
 ![Current Status](./assets/img/current_status.png)
 
 <div style="margin: 20px 0;">
