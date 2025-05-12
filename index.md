@@ -116,32 +116,32 @@ To build your own Bhangmeter V2 please follow the below instructions
 
 <p align="center">
   <a href="./assets/img/1.png" target="_blank">
-    <img src="./assets/img/1.png" alt="Step 1" style="max-height: 200px; margin: 10px 0;">
+    <img src="./assets/img/1.png" alt="Step 1" style="max-height: 300px; margin: 10px 0;">
   </a>
 </p>
 <p align="center">
   <a href="./assets/img/2.png" target="_blank">
-    <img src="./assets/img/2.png" alt="Step 2" style="max-height: 200px; margin: 10px 0;">
+    <img src="./assets/img/2.png" alt="Step 2" style="max-height: 300px; margin: 10px 0;">
   </a>
 </p>
 <p align="center">
   <a href="./assets/img/3.png" target="_blank">
-    <img src="./assets/img/3.png" alt="Step 3" style="max-height: 200px; margin: 10px 0;">
+    <img src="./assets/img/3.png" alt="Step 3" style="max-height: 300px; margin: 10px 0;">
   </a>
 </p>
 <p align="center">
   <a href="./assets/img/4.png" target="_blank">
-    <img src="./assets/img/4.png" alt="Step 4" style="max-height: 200px; margin: 10px 0;">
+    <img src="./assets/img/4.png" alt="Step 4" style="max-height: 300px; margin: 10px 0;">
   </a>
 </p>
 <p align="center">
   <a href="./assets/img/5.png" target="_blank">
-    <img src="./assets/img/5.png" alt="Step 5" style="max-height: 200px; margin: 10px 0;">
+    <img src="./assets/img/5.png" alt="Step 5" style="max-height: 300px; margin: 10px 0;">
   </a>
 </p>
 <p align="center">
   <a href="./assets/img/6.png" target="_blank">
-    <img src="./assets/img/6.png" alt="Step 6" style="max-height: 200px; margin: 10px 0;">
+    <img src="./assets/img/6.png" alt="Step 6" style="max-height: 300px; margin: 10px 0;">
   </a>
 </p>
 
