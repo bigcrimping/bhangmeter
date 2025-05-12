@@ -35,13 +35,39 @@ fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json')
   });
 </script>
 
-
-
 <div>
 <img src="./assets/img/monitoring_location.png" alt="Monitoring Location" style="float: left; margin-right: 10px;">
 </div>
 
 <div style="clear: both;"></div>
+
+<h3>Station Location</h3>
+<div id="map" style="height: 400px; width: 100%; margin: 10px 0;"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<script>
+fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json')
+  .then(response => response.json())
+  .then(data => {
+    // Initialize map
+    const map = L.map('map').setView([data.lat, data.long], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add marker
+    L.marker([data.lat, data.long])
+      .addTo(map)
+      .bindPopup(`Station: ${data.station}<br>Last update: ${data['last monitor upload date']}`)
+      .openPopup();
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    document.getElementById('map').innerHTML = '<div style="color: #e74c3c; padding: 20px;">Error loading map</div>';
+  });
+</script>
 
 There should be whitespace between paragraphs.
 
