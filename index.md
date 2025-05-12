@@ -107,6 +107,21 @@ A short time later the blastwave will hit the Bhangmeter V2 at which time it wil
   </a>
 </p>
 
+
+<p align="center">
+  <a href="./assets/img/build_title.png" target="_blank">
+    <img src="./assets/img/build_title.png" alt="Build Title Diagram" style="max-width: 300px; margin: 10px 0;">
+  </a>
+</p>
+
+To build your own Bhangmeter V2 please follow the below instructions
+
+<p align="center">
+  <a href="./assets/img/build_instructions.png" target="_blank">
+    <img src="./assets/img/build_instructions.png" alt="Build Instructions Diagram" style="max-width: 300px; margin: 10px 0;">
+  </a>
+</p>
+
 <style>
 .site-title,
 .site-description,
