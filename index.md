@@ -1,35 +1,28 @@
-<div style="text-align: left;">
-  ![Current Status](./assets/img/current_status.png)
+<div>
+<img src="./assets/img/current_status.png" alt="Current Status" style="float: left; margin-right: 10px;">
 </div>
+
+<div style="clear: both;"></div>
 
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-<div style="text-align: left;">
-  ![Location](./assets/img/monitoring_location.png)
+<div>
+<img src="./assets/img/monitoring_location.png" alt="Monitoring Location" style="float: left; margin-right: 10px;">
 </div>
+
+<div style="clear: both;"></div>
 
 There should be whitespace between paragraphs.
 
 There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-<div style="text-align: left;">
-  ![Location](./assets/img/how_works.png)
+<div>
+<img src="./assets/img/how_works.png" alt="How it Works" style="float: left; margin-right: 10px;">
 </div>
 
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-<style>
-.site-title {
-  display: none !important;
-}
-.site-description {
-  display: none !important;
-}
-</style>
+<div style="clear: both;"></div>
 
 <style>
 .site-title,
@@ -37,13 +30,7 @@ There should be whitespace between paragraphs. We recommend including a README, 
 header > p,
 header .header,
 header .description,
-header p {
-  display: none !important;
-}
-</style>
-
-<style>
-.site-title,
+header p,
 header h1,
 header .site-title,
 header > h1,
