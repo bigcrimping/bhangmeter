@@ -77,36 +77,37 @@ fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json')
 
 The Bhangmeter V2 uses a HSN-1000L Nuclear Event Detector device to detect the gamma ray burst from the explosion.
 
-<div>
+<p align="center">
   <a href="./assets/img/blast_to_diode.png" target="_blank">
     <img src="./assets/img/blast_to_diode.png" alt="Blast to Diode Diagram" style="max-width: 300px; margin: 10px 0;">
   </a>
-</div>
+</p>
 
 Upon the pulse hitting the detector in the Bhangmeter the information is received by the on-board computer
 
-<div>
+<p align="center">
   <a href="./assets/img/computer.png" target="_blank">
     <img src="./assets/img/computer.png" alt="On-board Computer Diagram" style="max-width: 300px; margin: 10px 0;">
   </a>
-</div>
+</p>
 
 After being detected by the on-board computer the information is uploaded to the cloud for storage in perpetuity
 
-<div>
+<p align="center">
   <a href="./assets/img/cloud.png" target="_blank">
     <img src="./assets/img/cloud.png" alt="Cloud Storage Diagram" style="max-width: 300px; margin: 10px 0;">
   </a>
-</div>
+</p>
 
 A short time later the blastwave will hit the Bhangmeter V2 at which time it will have completed its mission
 
-<div>
+<p align="center">
   <a href="./assets/img/destruct.png" target="_blank">
     <img src="./assets/img/destruct.png" alt="Destruction Diagram" style="max-width: 300px; margin: 10px 0;">
   </a>
-</div>
-<style>
+</p>
+
+
 .site-title,
 .site-description,
 header > p,
