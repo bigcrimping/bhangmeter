@@ -107,7 +107,7 @@ A short time later the blastwave will hit the Bhangmeter V2 at which time it wil
   </a>
 </p>
 
-
+<style>
 .site-title,
 .site-description,
 header > p,
@@ -121,5 +121,4 @@ header > .site-title {
   display: none !important;
 }
 </style>
-
 
