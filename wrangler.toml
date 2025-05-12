@@ -1,0 +1,14 @@
+name = "bhangmeter"
+type = "webpack"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[site]
+bucket = "./_site"
+entry-point = "workers-site"
+
+[build]
+command = "bundle install && jekyll build"
+upload.format = "service-worker"
