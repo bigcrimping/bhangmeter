@@ -1,6 +1,9 @@
-#title: Bhangmeter V2
+title: Bhangmeter V2
 logo: /assets/img/logo.png
 description: Host for the Bhangmeter V2 project
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
+sass:
+  style: compressed
+  sourcemap: never

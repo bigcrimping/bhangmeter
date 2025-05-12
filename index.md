@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <div>
 <img src="./assets/img/current_status.png" alt="Current Status" style="float: left; margin-right: 10px;">
 </div>
