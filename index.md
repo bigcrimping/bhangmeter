@@ -75,7 +75,7 @@ fetch('https://raw.githubusercontent.com/bigcrimping/ned_json/main/events.json')
 
 <div style="clear: both;"></div>
 
-The Bhangmeter V2 uses a HSN-1000L Nuclear Event Detector device to detect the gamma ray burst from the explosion.
+The Bhangmeter V2 employs an HSN-1000L Nuclear Event Detector to register the initial gamma ray burst from a nuclear explosion. This burst travels at the speed of light and reaches the detector almost instantly. It is followed shortly by the neutron flux—traveling at roughly 10% the speed of light—and then the blast wave, which moves much slower at Mach 1.5 to 3, arriving several milliseconds to seconds later depending on the distance.
 
 <p align="center">
   <a href="./assets/img/blast_to_diode.png" target="_blank">
@@ -83,7 +83,7 @@ The Bhangmeter V2 uses a HSN-1000L Nuclear Event Detector device to detect the g
   </a>
 </p>
 
-Upon the pulse hitting the detector in the Bhangmeter the information is received by the on-board computer
+The HSN-1000L detects the gamma burst and outputs an active-low pulse, which the microcontroller interprets as a "Nuclear Event Detection" (NED). This triggers a routine that logs the exact time of the event.
 
 <p align="center">
   <a href="./assets/img/computer.png" target="_blank">
@@ -91,7 +91,7 @@ Upon the pulse hitting the detector in the Bhangmeter the information is receive
   </a>
 </p>
 
-After being detected by the on-board computer the information is uploaded to the cloud for storage in perpetuity
+Once detected by the onboard computer, the NED timestamp is uploaded to the cloud for permanent storage.
 
 <p align="center">
   <a href="./assets/img/cloud.png" target="_blank">
@@ -99,7 +99,7 @@ After being detected by the on-board computer the information is uploaded to the
   </a>
 </p>
 
-A short time later the blastwave will hit the Bhangmeter V2 at which time it will have completed its mission
+A short time later—depending on the distance from the detonation site—the blast wave reaches the Bhangmeter V2, marking the completion of its mission. Its specialized polymer casing provides brief ablative cooling upon impact.
 
 <p align="center">
   <a href="./assets/img/destruct.png" target="_blank">
